@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+ 
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>login.LoginServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Logout</servlet-name>
+    <servlet-class>login.LogoutServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>Logout</servlet-name>
+    <url-pattern>/LogoutServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Registration</servlet-name>
+    <servlet-class>registration.RegistrationServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>Registration</servlet-name>
+    <url-pattern>/RegistrationServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AddItem</servlet-name>
+    <servlet-class>cart.AddItemServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>AddItem</servlet-name>
+    <url-pattern>/AddItemServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>CreateCart</servlet-name>
+    <servlet-class>cart.CreateCartServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>CreateCart</servlet-name>
+    <url-pattern>/CreateCartServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>EmptyCart</servlet-name>
+    <servlet-class>cart.EmptyCartServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>EmptyCart</servlet-name>
+    <url-pattern>/EmptyCartServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>RemoveItem</servlet-name>
+    <servlet-class>cart.RemoveItemServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>RemoveItem</servlet-name>
+    <url-pattern>/RemoveItemServlet</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>Search</servlet-name>
+    <servlet-class>search.SearchServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>Search</servlet-name>
+    <url-pattern>/SearchServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AdminAddItemServlet</servlet-name>
+    <servlet-class>admin.AdminAddItemServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>AdminAddItemServlet</servlet-name>
+    <url-pattern>/AdminAddItemServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AdminListItemsServlet</servlet-name>
+    <servlet-class>admin.AdminListItemsServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>AdminListItemsServlet</servlet-name>
+    <url-pattern>/AdminListItemsServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AdminRemoveItemServlet</servlet-name>
+    <servlet-class>admin.AdminRemoveItemServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>AdminRemoveItemServlet</servlet-name>
+    <url-pattern>/AdminRemoveItemServlet</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
